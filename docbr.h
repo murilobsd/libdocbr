@@ -16,3 +16,4 @@
 
 int cnpj_isvalid(int *);
 int cpf_isvalid(int *);
+int ddd_isvalid(int);
