@@ -2,6 +2,12 @@
 
 Simples biblioteca para validações de alguns documentos do Brasil.
 
+## Lista de documentos suportados
+
+- [x] CNPJ
+- [x] CPF
+- [x] DDD
+
 ## Construção
 
 Isso gera a biblioteca estática e o código de exemplo.
@@ -12,14 +18,18 @@ $ make all
 
 ## rodando exemplo
 
-O código do exemplo só exibe a validação do cpf, mas é fácil adaptar para 
-cnpj.
+O código do arquivo [example](example.c) possui métodos para simples testes 
+**unitários** das validações disponíveis.
+
 
 ```sh
-$ ./example <cpf_number> eg.: 12345678911
+$ ./example
 ```
 
-## como usar no meu código
+## Como usar no meu programa?
+
+Linkagem estática:
+
 ```sh
 $ sudo cp docbr.h /usr/local/include 
 $ sudo cp libdocbr.a /usr/local/lib
